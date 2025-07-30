@@ -1,4 +1,4 @@
-# Logo Segmentation
+# Image Segmentation
 
 This project performs semantic segmentation to detect masks in images using a custom U-Net model. It includes data preprocessing, training, validation, inference, and post-processing pipelines.
 
