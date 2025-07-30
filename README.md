@@ -27,7 +27,6 @@ This project performs semantic segmentation to detect masks in images using a cu
 ├── utils.py          # Utility functions (IoU, Dice Loss, BCEDice Loss, post-processing)
 ├── infer.py          # Inference on new images
 ├── test_setup.py     # Testing script for model and data loading
-├── evaluation.py     # Standalone evaluation script for benchmarking
 └── README.md         # Project documentation
 ```
 
@@ -35,7 +34,6 @@ This project performs semantic segmentation to detect masks in images using a cu
 
 - **Custom U-Net** 
 - **No pre-trained weights** - trained from scratch
-- **13.4M parameters** total
 - **Encoder-Decoder** architecture with skip connections
 - **Batch Normalization** and **ReLU** activations
 
@@ -136,14 +134,7 @@ python test_setup.py
 - Loss function calculations
 - IoU computation
 - Trained model performance (if checkpoint exists)
-
-## 📈 Evaluation
-
-Evaluate your model on test datasets using:
-
-```bash
-python evaluation.py --testset_path ./test/ --prediction_path ./predictions/
-```
+`
 
 **Features:**
 - Automated inference generation if predictions don't exist
